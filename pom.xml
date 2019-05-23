@@ -11,7 +11,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <bnd.version>4.2.0</bnd.version>
+    <bnd.version>4.3.0-SNAPSHOT</bnd.version>
   </properties>
 
   <repositories>
@@ -42,7 +42,7 @@
     <pluginRepository>
       <id>Bnd Snapshots</id>
       <name>Bnd Latest build</name>
-      <url>https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBuild/artifact/dist/bundles/</url>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -241,3 +241,4 @@ Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
   </modules>
 
 </project>
+
