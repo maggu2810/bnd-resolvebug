@@ -1,0 +1,35 @@
+index: target/index.xml;name="resolvebug-app"
+
+-standalone: ${index}
+
+-runfw: org.eclipse.osgi
+-runee: JavaSE-1.8
+
+-resolve.effective: active
+
+-runrequires: \
+	bnd.identity;id='org.apache.aries.jndi.api',\
+	bnd.identity;id='org.apache.aries.jndi.core',\
+	bnd.identity;id='org.apache.aries.jndi.legacy.support',\
+	bnd.identity;id='org.apache.aries.jndi.rmi',\
+	bnd.identity;id='org.apache.aries.jndi.url',\
+	bnd.identity;id='org.apache.aries.jpa.api',\
+	bnd.identity;id='org.apache.aries.jpa.container',\
+	bnd.identity;id='org.apache.aries.jpa.javax.persistence_2.1',\
+	bnd.identity;id='org.apache.aries.jpa.support',\
+	bnd.identity;id='org.apache.aries.proxy',\
+	bnd.identity;id='org.apache.aries.proxy.api',\
+	bnd.identity;id='org.apache.aries.spifly.dynamic.bundle',\
+	bnd.identity;id='org.apache.aries.util',\
+	bnd.identity;id='org.ops4j.pax.jdbc.config',\
+	bnd.identity;id='org.ops4j.pax.jdbc.mariadb',\
+	bnd.identity;id='org.ops4j.pax.jdbc.pool.common',\
+	bnd.identity;id='org.ops4j.pax.jdbc.pool.dbcp2',\
+	bnd.identity;id='org.ops4j.pax.transx.pax-transx-tm-api',\
+	bnd.identity;id='org.ops4j.pax.transx.pax-transx-tm-geronimo',\
+	bnd.identity;id='org.hibernate.common.hibernate-commons-annotations',\
+	bnd.identity;id='org.hibernate.orm.core',\
+	bnd.identity;id='org.hibernate.orm.osgi',\
+	bnd.identity;id='org.apache.felix.fileinstall',\
+	bnd.identity;id='net.bytebuddy.byte-buddy',\
+	bnd.identity;id='jpa-utils'
